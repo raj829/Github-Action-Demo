@@ -8,4 +8,19 @@ jobs:
         run: |
           echo "Hi whats up"
           echo "How are you"
- 
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Test job
+        run: |
+          echo "Hi whats up"
+          echo "How are you"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Deploy job
+        run: |
+          echo "Hi whats up"
+          echo "How are you"
