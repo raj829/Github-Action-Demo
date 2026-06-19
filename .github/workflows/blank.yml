@@ -16,9 +16,9 @@ jobs:
           echo "Hi whats up"
           echo "How are you"
   deploy:
-    runs-on: Deploy job
+    runs-on: ubuntu-latest
     steps:
-      - name: Hello Step
+      - name: Deploy job
         run: |
           echo "Hi whats up"
           echo "How are you"
