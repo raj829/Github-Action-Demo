@@ -5,22 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build job
-        run: |
-          echo "Hello, ${{vars.My_Name}}"
-          echo "How, ${{vars.My_Name}}"
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Test job
-        run: |
-          echo "Hi whats up"
-          echo "How are you"
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - name: Deploy job
-        run: |
-          echo "Hi whats up"
-          echo "How are you"
+        run: echo "Hello, ${{vars.My_Name}}"
