@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: |
-        echo "Hello"
+       run: |
+        echo "Hi whats up"
         echo "How are you"
