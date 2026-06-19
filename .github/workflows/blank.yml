@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: Build job
         run: |
-          echo "Hi whats up"
-          echo "How are you"
+          echo "Hello, ${{vars.My_Name}}"
+          echo "How, ${{vars.My_Name}}"
   test:
     runs-on: ubuntu-latest
     needs: build
