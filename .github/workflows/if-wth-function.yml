@@ -34,7 +34,7 @@ jobs:
               run: echo "Success email sent to the team..."
     failure-notify:
         needs: [quality-check, dev-deploy, prod-deploy] 
-        if: always() && !failure()
+        if: always() && failure()
         runs-on: ubuntu-latest
         steps:
             - name: Notify Failure
