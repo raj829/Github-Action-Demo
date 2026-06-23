@@ -1,5 +1,5 @@
 name: Env Demo
-on: push
+on: workflow_dispatch
 env:
   APP_ENV: "dev"
 jobs:
