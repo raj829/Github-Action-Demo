@@ -11,7 +11,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Perform Code Quality Check
-              run: echo "Performing code quality check..."
+              run: |
+                  echo "Performing code quality check..."
+                  exit 1
                 # Add your code quality check commands here
     dev-deploy:
         if: github.ref_name == 'developer' && github.event_name == 'push'
